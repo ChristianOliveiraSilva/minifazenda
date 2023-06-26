@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mini Fazenda">
+        <meta name="keywords" content="Mini Fazenda">
+        <meta name="author" content="COSSOFTWARE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mini Fazenda</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Arial;
+            }
+
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .content {
+                position: fixed;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+
+            #myBtn {
+                font-size: 18px;
+                padding: 12px 20px;
+                border: none;
+                background: #000;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #myBtn:hover {
+                background: #ddd;
+                color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <video loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>Em breve</h1>
+            <br/>
+            <button id="myBtn" onclick="playVideo()">Relembre esta música nostálgica</button>
+        </div>
+
+        <script>
+            var video = document.getElementById("myVideo");
+            video.volume = 0.03;
+            var btn = document.getElementById("myBtn");
+            
+            function playVideo() {
+                if (video.paused) {
+                    video.play();
+                }
+            }
+        </script>
+    </body>
+</html>

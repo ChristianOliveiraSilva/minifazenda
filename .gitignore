@@ -1,0 +1,28 @@
+# Arquivos de configuração
+.env
+npm-debug.log
+yarn-error.log
+
+# Dependências
+node_modules
+
+# Arquivos gerados
+dist
+build
+out
+.next
+public
+
+# Logs
+logs
+*.log
+
+# Arquivos temporários
+*.swp
+*.swo
+*.tmp
+
+# Outros arquivos e pastas específicos do projeto
+coverage
+.vscode
+.DS_Store
